@@ -1,1 +1,0 @@
-CRUD operation project created for ineuron sde assesment
