@@ -12,7 +12,7 @@ export default function RouterComponent({ }: Props) {
     return (
         <>
             <Routes>
-                <Route path="/" element={<UserDetails />} />
+                <Route path="/" element={<UserDetails />}  />
             </Routes>
             
 
