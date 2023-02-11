@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ineuronassesment/static/css/main.533affad.css",
+    "main.js": "/ineuronassesment/static/js/main.89e9714c.js",
+    "static/js/787.d3b22678.chunk.js": "/ineuronassesment/static/js/787.d3b22678.chunk.js",
+    "index.html": "/ineuronassesment/index.html",
+    "main.533affad.css.map": "/ineuronassesment/static/css/main.533affad.css.map",
+    "main.89e9714c.js.map": "/ineuronassesment/static/js/main.89e9714c.js.map",
+    "787.d3b22678.chunk.js.map": "/ineuronassesment/static/js/787.d3b22678.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.533affad.css",
+    "static/js/main.89e9714c.js"
+  ]
+}
