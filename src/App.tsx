@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+import { useSelector } from 'react-redux/es/exports';
+import { BrowserRouter as Router } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
 import './App.css';
+import "react-toastify/dist/ReactToastify.css";
+import RouterComponent from './RouterComponent';
 
 function App() {
+  const appCtx = useSelector((state: any) => state.app)
+  console.log(appCtx)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ToastContainer
+                position="bottom-left"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={true}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable={false}
+                pauseOnHover
+                theme={appCtx.isDarkMode ? "dark" : "light"}
+                toastStyle={
+                    appCtx.isDarkMode
+                        ? {
+                            backgroundColor: "#27272A",
+                            color: "#E2E8F0",
+                        }
+                        : { backgroundColor: "#F8FAFC", color: "#1F2937" }
+                }
+            />
+      <RouterComponent />
+      
+    </Router>
   );
 }
 
